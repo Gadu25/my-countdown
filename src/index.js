@@ -1,14 +1,11 @@
 import Countdown from './Countdown.js';
 
-export function createCountdown({ targetTime, syncUrl, selector }) {
-  const el = document.querySelector(selector);
+export function createCountdown({ targetTime, syncUrl, onTick, onEnd }) {
   const countdown = new Countdown({
     targetTime,
     syncUrl,
-    onTick: ({ days, hours, minutes, seconds }) => {
-      el.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-    },
-    onEnd: () => (el.textContent = 'Time’s up!')
+    onTick,
+    onEnd,
   });
 
   countdown.init();

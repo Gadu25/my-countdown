@@ -12,5 +12,8 @@
   "description": "",
   "devDependencies": {
     "vitest": "^3.2.4"
+  },
+  "exports": {
+    ".": "./src/index.js"
   }
 }
