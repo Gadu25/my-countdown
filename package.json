@@ -1,0 +1,16 @@
+{
+  "name": "@lex/countdown",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "Gadu25",
+  "description": "",
+  "devDependencies": {
+    "vitest": "^3.2.4"
+  }
+}
